@@ -13,4 +13,4 @@
 5. 入力欄に "," （半角コンマ）区切りで市区町村名や有名な場所名を入力する
 
 # 使用例
-![sample](https://github.com/tikiti-kyotaro/Meet_station/assets/88369097/4e563e5c-9e10-49fb-9a84-70a4fae0aa30)
+![sample](https://github.com/tikiti-kyotaro/Meet_station/assets/88369097/a5d0694a-e922-4469-aceb-1cdbe8473705)
