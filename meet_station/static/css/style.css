@@ -1,0 +1,40 @@
+h1 {
+    color: green;
+    font-family: YuGothic;
+    text-align: center;
+}
+body{
+    background-color: wheat;
+}
+.usage{
+    color: seagreen;
+    font-size: small;
+}
+.input{
+    text-align: center;
+}
+.input-form {
+    width: 1000px;
+    padding: 3px 7px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    text-align: center;
+  }
+.input-form:focus {
+    outline: 0;
+    font-family: YuGothic;
+    border: 2px solid #2196f3;
+}
+.image {
+    text-align: center;
+}
+.error{
+    color: crimson;
+}
+h3{
+    color: darkolivegreen;
+    font-family: YuGothic;
+}
+h5{
+    color: seagreen;
+}

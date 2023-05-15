@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>待ち合わせ場所の最寄駅</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="image">
+    <img src="https://4.bp.blogspot.com/-AYhlnJHU3L0/WlGpsTHUaMI/AAAAAAABJpQ/xIkUOPAOOsMmwf6H8ZyFCdaGXeJmllOoQCLcBGAs/s200/train_character1_silver.png" width="90px">
+    <img src="https://3.bp.blogspot.com/-ndmzLFb4xCA/WlGpsq_oTVI/AAAAAAABJpU/7toXpMMREJM1W7_yLcMa_kDB-GUtPnXjACLcBGAs/s200/train_character2_yellow.png" width="90px">
+    <img src="https://1.bp.blogspot.com/-9gJB5SjRmBE/WlGptxJkyuI/AAAAAAABJpY/2MLa6mJQxKQctKpG1vTi1P9laduls3jMACLcBGAs/s200/train_character3_orange.png" width="90px">
+    <img src="https://1.bp.blogspot.com/-fKsWQeQuABY/WlGpu1nwlTI/AAAAAAABJpk/R_c798oWU8Ut3LXpviriRctQc6yKjRR9gCLcBGAs/s200/train_character4_red.png" width="90px">
+    <img src="https://3.bp.blogspot.com/-OPJy9Azc97w/WlGpuzRq6DI/AAAAAAABJpo/7tjkh4KeSn0R30rloGEAMg3cyS8yGoJPQCLcBGAs/s200/train_character5_pink.png" width="90px">
+    <img src="https://1.bp.blogspot.com/-MOu4MBcG2jE/WlGpvA9w8RI/AAAAAAABJps/jSLIqxdvjhIUHKSI2HJ-q-BGdotZkIv-ACLcBGAs/s200/train_character6_purple.png" width="90px">
+    <img src="https://4.bp.blogspot.com/-kzz84G6RlBM/WlGpwxDtNTI/AAAAAAABJp4/yN0ASzHFSaUjEKmiq76ARXmelxYHl2iTwCLcBGAs/s200/train_character7_blue.png" width="90px">
+    <img src="https://2.bp.blogspot.com/-N6l9E8w-pbU/WlGpxQ8o_YI/AAAAAAABJp8/rQ_KQCslQUMqwY0EipJ21yjVpvBEO-2IgCLcBGAs/s200/train_character8_green.png" width="90px">
+    <img src="https://3.bp.blogspot.com/-OEMUsYc3Xu4/WlGpxvg0tWI/AAAAAAABJqA/qr-lfRfhMV4xNlG976PMVuXKrGNttox8gCLcBGAs/s200/train_character9_.png" width="90px">
+  </div>
+  <form method="POST">
+    <h1>待ち合わせ場所の最寄駅</h1>
+    <h4>離れた場所の間の中間地点の緯度経度、またその地点の最寄駅を表示します。家が離れている人との待ち合わせ場所決めに使ってみてください。</h4>
+    <h5>使い方</h5>
+    <div class="usage">
+      <p>下の入力ホームに住所を半角コンマ区切りで入力してください。もし住所が該当しない場合は、市区町村名や近くの有名な場所などで検索するといいと思います。（例：八王子市,新宿区,清水寺）</p>
+    </div>
+    <h1> </h1>
+    <div class="input">
+      <input type="場所" name="locates" placeholder="場所を半角コンマで分けて入力してください" class="input-form">
+      <input type="submit" value="送信">
+    </div>
+    <div class="error">
+      <h2>{{error_info}}</h2>
+    </div>
+    <h3>最寄駅：{{nearest_station_name}}</h3>
+    <h3>路線：{{line_name}}</h3>
+    <h3>すべての地点から等しい距離にある地点：{{target_ll_info}}</h3>
+    <h5>{{logging_list}}</h5>
+  </form>
+</body>
+</html>
